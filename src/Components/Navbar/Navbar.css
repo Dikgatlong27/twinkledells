@@ -42,9 +42,9 @@ nav {
 
     .toggle-menu-open, .toggle-menu-close {
         position: fixed;
-        top: 2rem;
+        top: 1.9rem;
         left: 3rem;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         color: #b8421e;
         cursor: pointer;
         transition: all .5s ease;
@@ -60,7 +60,7 @@ nav {
 
     .nav-logo-mobile {
         position: relative;
-        width: 6rem;
+        width: 5rem;
         margin: 2rem auto;
     }
     
