@@ -1,9 +1,21 @@
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+
+import { Home, AboutUs, Contact, Products } from './Pages'
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
     <div className="App">
-      <h1>Twinkle Dells</h1>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<AboutUs />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/products' element={<Products />} />
+      </Routes>
+      <Footer />
     </div>
   );
 }

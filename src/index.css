@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Freeman&family=Julee&family=Labrada:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Freeman", sans-serif;
+    background:linear-gradient(80deg,#faad96dd,#f0f0f0);
+    transition: all 1s ease;
+}
+
+:root {
+    --bg-main: #cecece;
+    --bg-color: #7d7d7d;
+    --main-color: #ff9d7f;
+}
