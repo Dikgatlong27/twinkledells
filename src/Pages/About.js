@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { AboutUs } from '../Components'
 
 const About = () => {

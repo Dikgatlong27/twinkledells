@@ -80,3 +80,8 @@
     background-color: #e76f51;
   }
   
+  @media screen and (min-width: 750px) {
+    .products-page {
+        margin-top: 80px;
+      }
+  }
