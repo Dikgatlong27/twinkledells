@@ -1,12 +1,11 @@
 import React from 'react'
+import Product from '../Components/Product/Product'
+
 
 const Products = () => {
   return (
     <div>
-      <h1 className='main-section'>Our Products</h1>
-      <h1 className='section'>Section</h1>
-      <h1 className='main-section'>Section</h1>
-      <h1 className='section'>Section</h1>
+      <Product />
     </div>
   )
 }

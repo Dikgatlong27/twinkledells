@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="footer-content">
         <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
         <div className="footer-address">
-          <p>123 Your Street, Your City, Your Country</p>
+          <p>120 Nora Avenue, Deo Credo Complex, Pretoria, South Africa</p>
         </div>
         <ul className="footer-links">
           <Link to='products' className='li'><li>Products</li></Link>
