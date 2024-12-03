@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Twinkle Dells Florist. All rights reserved.</p>
         <div className="footer-address">
           <p>120 Nora Avenue, Deo Credo Complex, Pretoria, South Africa</p>
         </div>

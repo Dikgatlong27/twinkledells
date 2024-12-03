@@ -3,14 +3,26 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  margin-top: 0;
   overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  animation: slideBackground 12s infinite;
-  z-index: -1;
+  z-index: 0;
 }
 
-/* Add a dark overlay for text readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideBackground 15s infinite;
+  z-index: -2;
+}
+
+/* Dark overlay for readability */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -28,46 +40,62 @@
 }
 
 .hero-overlay h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-overlay p {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-button {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  background-color: #f4a361;
-  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f4a261;
+  color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero-button:hover {
   background-color: #e76f51;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Keyframes for sliding background */
 @keyframes slideBackground {
   0% { background-image: url('../../assets/bg/bouquet-beautiful-flowers.jpg'); }
   33% { background-image: url('../../assets/bg/flowers-bouquet-with-tag.jpg'); }
-  66% { background-image: url('../../assets/bg/Twinkle\ Dells\ Florist_.jpg'); }
+  66% { background-image: url('../../assets/bg/Twinkle Dells Florist_.jpg'); }
   100% { background-image: url('../../assets/bg/with\ tag\ _Twinkle\ Dells\ Florist_.jpg'); }
 }
 
-@media screen and (max-width:750px) {
+/* Responsive adjustments */
+@media screen and (max-width: 750px) {
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+
   .hero-overlay h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
   }
-  
+
   .hero-overlay p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
+  }
+
+  .hero-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
   }
 }

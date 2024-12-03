@@ -1,35 +1,31 @@
-import React, { useState } from 'react';
 import './Newsletter.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Newsletter = () => {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    setIsSubscribed(true);
-    alert('Thank you for subscribing to our newsletter!');
-    setEmail('');
-  };
+  const [state, handleSubmit] = useForm("mwpkagkg");
+  if (state.succeeded) {
+      return <p style={{ textAlign: 'center', padding: '2rem' }}>Thanks for Subscribing!</p>;
+  }
 
   return (
     <section className="newsletter-section">
       <div className="newsletter-container">
-        <h2>Subscribe to Our Newsletter</h2>
-        {isSubscribed ? (
-          <p>Thank you for subscribing! Stay tuned for updates.</p>
-        ) : (
-          <form onSubmit={handleNewsletterSubmit}>
+        
+          <form onSubmit={handleSubmit}>
             <input
               type="email"
+              name='email'
               placeholder="Enter your email to subscribe"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
+              
+            />
+            <ValidationError
+             prefix='Email'
+             field='email'
+             errors={state.errors}
             />
             <button type="submit">Subscribe</button>
           </form>
-        )}
+        
       </div>
     </section>
   );

@@ -1,52 +1,31 @@
 import React from 'react';
 import './Product.css';
 
-const products = [
-  {
-    id: 1,
-    name: 'Rose Bouquet',
-    price: 'R200',
-    image: '/assets/bg/product1.jpg',
-    description: 'A beautiful bouquet of fresh roses.',
-  },
-  {
-    id: 2,
-    name: 'Tulip Arrangement',
-    price: 'R180',
-    image: '/assets/bg/product2.jpg',
-    description: 'A colorful arrangement of tulips.',
-  },
-  {
-    id: 3,
-    name: 'Lily Bouquet',
-    price: 'R250',
-    image: '/assets/bg/product3.jpg',
-    description: 'A stunning bouquet of lilies for any occasion.',
-  },
-  {
-    id: 4,
-    name: 'Mixed Flower Basket',
-    price: 'R300',
-    image: '/assets/bg/product4.jpg',
-    description: 'A basket full of mixed flowers for a cheerful gift.',
-  },
+const images = [
+  { id: 1, src: '/gallery/image (1).jpg', alt: 'Beautiful Flowers 1' },
+  { id: 2, src: '/gallery/image (2).jpg', alt: 'Beautiful Flowers 2' },
+  { id: 3, src: '/gallery/image (3).jpg', alt: 'Beautiful Flowers 3' },
+  { id: 4, src: '/gallery/image (4).jpg', alt: 'Beautiful Flowers 4' },
+  { id: 5, src: '/gallery/image (5).jpg', alt: 'Beautiful Flowers 5' },
+  { id: 6, src: '/gallery/image (6).jpg', alt: 'Beautiful Flowers 6' },
+  { id: 7, src: '/gallery/image (7).jpg', alt: 'Beautiful Flowers 7' },
+  { id: 8, src: '/gallery/image (8).jpg', alt: 'Beautiful Flowers 8' },
+  { id: 9, src: '/gallery/image (9).jpg', alt: 'Beautiful Flowers 9' },
+  { id: 10, src: '/gallery/image (10).jpg', alt: 'Beautiful Flowers 10' },
+  { id: 11, src: '/gallery/image (11).jpg', alt: 'Beautiful Flowers 11' },
+  { id: 12, src: '/gallery/image (12).jpg', alt: 'Beautiful Flowers 12' },
+  { id: 13, src: '/gallery/image (13).jpg', alt: 'Beautiful Flowers 13' }
+  
 ];
 
 const Product = () => {
   return (
-    <div className="products-page">
-      <h2>Our Products</h2>
-      <p>Browse through our beautiful selection of fresh flowers and arrangements!</p>
-      <div className="products-grid">
-        {products.map((product) => (
-          <div key={product.id} className="product-card">
-            <img src={product.image} alt={product.name} className="product-image" />
-            <div className="product-info">
-              <h3>{product.name}</h3>
-              <p>{product.description}</p>
-              <span className="product-price">{product.price}</span>
-              <button className="view-btn">Order Now</button>
-            </div>
+    <div className="gallery-page">
+      <h1 className="gallery-title">Image Gallery</h1>
+      <div className="gallery-grid">
+        {images.map((image) => (
+          <div key={image.id} className="gallery-item">
+            <img src={image.src} alt={image.alt} className="gallery-image" />
           </div>
         ))}
       </div>

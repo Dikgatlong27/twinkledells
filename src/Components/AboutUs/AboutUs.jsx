@@ -31,7 +31,7 @@ const AboutUs = () => {
         <h2>Our Team</h2>
         <div className="team-members">
           <div className="team-member">
-            <img src="path_to_image" alt="Founder" />
+            <img src="/founder.jpg" alt="Founder" />
             <h3>Ngwenya</h3>
             <p>Founder & Lead Florist</p>
           </div>

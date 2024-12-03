@@ -1,14 +1,16 @@
-/* About Us Section Styles */
+
 .about-us {
     background-color: #fff;
     color: #333;
-    padding: 4rem 2rem;
     text-align: center;
+    padding: 0 2rem;
+    margin: 0 auto;
   }
   
   .about-us-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0;
   }
   
   .about-us h2 {
@@ -28,14 +30,24 @@
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     background-color: #f4a261; /* Same color as Hero button */
-    color: #fff;
+  
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+
+  .about-us-button #explore {
+    color: #fff;
+    text-decoration: none;
   }
   
   .about-us-button:hover {
     background-color: #e76f51; /* Same hover effect as Hero button */
   }
   
+  @media screen and (max-width:750px) {
+    .about-us {
+      margin-top: 0;
+    }
+  }
