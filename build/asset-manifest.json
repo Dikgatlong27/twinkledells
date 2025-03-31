@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.71d5c23f.css",
-    "main.js": "/static/js/main.07cfb0ca.js",
+    "main.js": "/static/js/main.fd4c7673.js",
     "static/media/bouquet-beautiful-flowers.jpg": "/static/media/bouquet-beautiful-flowers.51a6877336b7227c3810.jpg",
     "static/media/flowers-bouquet-with-tag.jpg": "/static/media/flowers-bouquet-with-tag.e824cd9c751d008949a4.jpg",
     "static/media/Twinkle Dells Florist_.jpg": "/static/media/Twinkle Dells Florist_.9a6e69716ffc548250e8.jpg",
     "static/media/with tag _Twinkle Dells Florist_.jpg": "/static/media/with tag _Twinkle Dells Florist_.6d9ec58cf8a7ba961b40.jpg",
     "index.html": "/index.html",
     "main.71d5c23f.css.map": "/static/css/main.71d5c23f.css.map",
-    "main.07cfb0ca.js.map": "/static/js/main.07cfb0ca.js.map"
+    "main.fd4c7673.js.map": "/static/js/main.fd4c7673.js.map"
   },
   "entrypoints": [
     "static/css/main.71d5c23f.css",
-    "static/js/main.07cfb0ca.js"
+    "static/js/main.fd4c7673.js"
   ]
 }

@@ -1,11 +1,11 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+
+  # Don't rewrite existing files or directories
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
 
-  RewriteLog "/path/to/rewrite_log"
-  RewriteLogLevel 3
+  # Rewrite all other requests to index.html
+  RewriteRule ^(.*)$ /index.html [L]
 </IfModule>
