@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 const ContactUs = () => {
   const [state, handleSubmit] = useForm("mnnqlenn");
   if (state.succeeded) {
-      return <p style={{ textAlign: 'center', height: '80vh' }}>Message sent successfully!</p>;
+      return <p style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '80vh', fontSize: '30px' }}>Message sent successfully!</p>;
   }
 
   return (
@@ -51,14 +51,18 @@ const ContactUs = () => {
 
       <div className="contact-info">
         <h3>Visit Us</h3>
-        <p>120 Nora Avenue, Deo Credo Complex,  opposite The Grove Mall</p>
+        <p>380 Van Heerden St. Gezina, Pretoria, South Africa</p>
 
         <h3>Follow Us</h3>
         <div className="social-links">
-          <a href="https://www.facebook.com/TwinkileDells" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a href="https://www.instagram.com/TwinkileDells" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.tiktok.com/@twinkledells.florist?lang=en" target="_blank" rel="noopener noreferrer">TikTok</a>
+          <a href="https://www.instagram.com/twinkledells_florist/" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
+
+      <iframe src="https://maps.google.com/maps?q=380%20Van%20Heerden%20St.%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no"  title='Twinkle Dells Florist Location'>
+      </iframe>
+       
     </div>
   );
 };

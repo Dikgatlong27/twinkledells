@@ -17,17 +17,33 @@ const Product = () => {
   return (
     <div className="gallery-page">
       <h1 className="gallery-title">Our Flower Bunches</h1>
+      <p style={{ marginBottom: '2rem' }}>Tap on an image to see the price and place your order via WhatsApp.</p>
       <div className="gallery-grid">
-        {images.map((image) => (
-          <div
-            key={image.id}
-            className="gallery-item"
-            onClick={() => setSelected(selected === image.id ? null : image.id)}
-          >
-            <img src={image.src} alt={image.alt} className="gallery-image" />
-            {selected === image.id && <div className="price-tag">{image.price}</div>}
-          </div>
-        ))}
+        {images.map((image) => {
+          const whatsappMessage = `Hello, I'm interested in ordering: ${image.alt} for ${image.price}`;
+          const whatsappLink = `https://wa.me/27732643351?text=${encodeURIComponent(whatsappMessage)}`;
+
+          return (
+            <div
+              key={image.id}
+              className="gallery-item"
+              onClick={() => setSelected(selected === image.id ? null : image.id)}
+            >
+              <img src={image.src} alt={image.alt} className="gallery-image" />
+              {selected === image.id && (
+                <div className="overlay">
+                  <div className="price-tag">
+                    <div>{image.price}</div>
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="whatsapp-order-btn">
+                    Order via WhatsApp
+                    </a>
+                  </div>
+                  
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
     </div>
   );
