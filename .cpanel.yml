@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/twinklr0p9l0/public_html/
+    - rm -rf $DEPLOYPATH*
+    - npm install
+    - npm run build
+    - cp -R build/* $DEPLOYPATH
