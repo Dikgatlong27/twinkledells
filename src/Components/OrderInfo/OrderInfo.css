@@ -1,0 +1,32 @@
+.order-info {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .order-info h2,
+  .order-info h3 {
+    color: #c94b4b;
+    margin-bottom: 10px;
+  }
+  
+  .order-info ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .bank-details p {
+    margin: 5px 0;
+  }
+  
+  .note {
+    margin-top: 20px;
+    font-style: italic;
+    color: #444;
+  }
+  

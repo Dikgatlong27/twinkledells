@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import OrderInfo from '../OrderInfo/OrderInfo';
+
 import './Product.css';
 
 const images = [
@@ -16,6 +18,7 @@ const Product = () => {
 
   return (
     <div className="gallery-page">
+      <OrderInfo />
       <h1 className="gallery-title">Our Flower Bunches</h1>
       <p style={{ marginBottom: '2rem' }}>Tap on an image to see the price and place your order via WhatsApp.</p>
       <div className="gallery-grid">

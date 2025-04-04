@@ -3,6 +3,8 @@ import Footer from "./Footer/Footer";
 import AboutUs from "./AboutUs/AboutUs";
 import ContactUs from "./ContactUs/ContactUs";
 import Product from "./Product/Product";
+import OrderInfo from "./OrderInfo/OrderInfo";
+
 
 
 export {
@@ -10,5 +12,6 @@ export {
     Footer,
     AboutUs,
     ContactUs,
-    Product
+    Product,
+    OrderInfo
 }
